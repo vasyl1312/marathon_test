@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Kyiv Type Sans";
+  src: url("/fonts/KyivTypeSans.woff2") format("woff2"),
+    url("/fonts/KyivTypeSans.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.mainPicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(179deg, #0d2f4d 1.11%, rgba(255, 255, 255, 0) 116.54%) !important;
+  position: relative;
+  height: -webkit-fill-available;
+}
+
+.mainPicture__moon {
+  position: absolute;
+  width: max-content;
+  top: 40%;
+  left: 38%;
+}
+
+.mainPicture__mountains {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+
+.mainPicture__cloud {
+  position: absolute;
+  width: max-content;
+  top: 12%;
+  left: 60%;
+}
+
+.mainPicture__title {
+  padding-top: 105px;
+  color: white;
+  text-align: center;
+  font-family: "Kyiv Type Sans";
+  font-size: clamp(54px, 10vh, 124px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+  text-transform: capitalize;
+}
+
+.mainPicture__subtitle {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(22px, 5vh, 62px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainPicture__button-main {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-top: 35px;
+  border-radius: 15px;
+  background: #6997c1;
+  padding: 10px 20px;
+  gap: 12px;
+}
+
+#clicks {
+  color: white;
+  margin-top: 20px;
+  font-size: larger;
+}
