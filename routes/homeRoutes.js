@@ -17,9 +17,9 @@ router.post("/handleClick", (req, res) => {
 });
 
 function saveClicksToFile(clicks) {
-  fs.writeFile("clickCount.txt", clicks.toString(), (err) => {
+  fs.writeFile("clics.txt", clicks.toString(), (err) => {
     if (err) throw err;
-    console.log("Кількість кліків збережено в файлі", clicks.toString());
+    console.log("Кількість кліків", clicks.toString());
   });
 }
 

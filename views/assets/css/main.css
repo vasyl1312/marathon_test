@@ -101,19 +101,41 @@ h6 {
   background: linear-gradient(179deg, #0d2f4d 1.11%, rgba(255, 255, 255, 0) 116.54%) !important;
   position: relative;
   height: -webkit-fill-available;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+
+.mainPicture::-webkit-scrollbar {
+  display: none;
 }
 
 .mainPicture__moon {
   position: absolute;
   width: max-content;
-  top: 40%;
+  top: 45%;
   left: 38%;
+  /* transform: translate(50%, 50%); */
+  transition: transform 0.8s ease-in;
+}
+
+.mainPicture:hover .mainPicture__moon {
+  transform: translate(-10%, -15%);
 }
 
 .mainPicture__mountains {
   position: absolute;
   width: 100%;
+  /* height: 1024px; */
+  max-height: 100%;
   top: 50%;
+  /* transform: translate(-50%, -50%); */
+  transition: transform 0.8s ease-in;
+  transform-origin: center;
+  overflow-y: hidden;
+}
+
+.mainPicture:hover .mainPicture__mountains {
+  transform: scale(1.125);
 }
 
 .mainPicture__cloud {
@@ -121,6 +143,18 @@ h6 {
   width: max-content;
   top: 12%;
   left: 60%;
+
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(140%);
+  }
+
+  100% {
+    transform: translateX(-360%);
+  }
 }
 
 .mainPicture__title {
@@ -162,11 +196,114 @@ h6 {
   border-radius: 15px;
   background: #6997c1;
   padding: 10px 20px;
+  /* align-items: center; */
   gap: 12px;
+
+  transition: background 0.3s;
+
+  z-index: 10;
+}
+
+.mainPicture__button-main:hover {
+  background: #ecf6ff;
+}
+
+.mainPicture__button-main:active {
+  background: #0d2f4d;
 }
 
 #clicks {
   color: white;
   margin-top: 20px;
   font-size: larger;
+}
+
+.routesPage {
+  background: #031220;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 10%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+}
+
+.routesPage__wrapperRoutes {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  overflow-x: scroll;
+}
+
+.routesPage__wrapperRoutes::-webkit-scrollbar {
+  display: none;
+  /* Ховаємо повзунок */
+}
+
+.routesPage__title {
+  color: #fff;
+  font-family: "Kyiv Type Sans", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+}
+
+.routesPage__route {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: #fff;
+  padding: 35px;
+}
+
+.txtWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.txtWrap > h2 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.txtWrap > p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+}
+
+.navRouteWrap {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.navRouteWrap__heartWrapper > a {
+  cursor: pointer;
+}
+
+.heartIMG:active {
+  fill: #f00;
+}
+
+.count-hearts {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 3px;
 }
