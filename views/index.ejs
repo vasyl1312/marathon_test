@@ -114,6 +114,28 @@
         </div>
       </div>
     </div>
+    <div class="formWrap">
+      <form method="post" action="/email">
+        <div class="formWrap__txtWrap">
+          <h1>Форма зворотнього зв’язку</h1>
+          <h4>Оберіть свій маршрут та залиште свої контактні дані і ми надішлемо тобі всю необхідну інформацію про тур</h4>
+        </div>
+  
+        <div class="mailWrap">
+          <label for="option">Оберіть тур</label>
+          <select aria-placeholder="Оберіть необхідний тур" name="option" id="">
+            <option value="Вершинний пошук">Вершинний пошук</option>
+            <option value="Гребінний шлях">Гребінний шлях</option>
+            <option value="Долинний похід">Долинний похід</option>
+            <option value="Експедиція у ліс">Експедиція у ліс</option>
+          </select>
+  
+          <label class="labelForEmail" for="email">Email</label>
+          <input placeholder="Введіть Ваш email" type="email" name="email" id="email">
+        </div>
+        <input class="formWrap-mainButton" type="submit" value="Надішліть мені інформацію">
+      </form>
+    </div>
     <script src="/assets/js/script.js" defer></script>
   </body>
 </html>

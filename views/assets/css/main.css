@@ -226,7 +226,7 @@ h6 {
   padding-top: 10%;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 
 .routesPage__wrapperRoutes {
@@ -306,4 +306,108 @@ h6 {
   font-weight: 500;
   line-height: normal;
   margin-left: 3px;
+}
+
+.formWrap {
+  background: #031220;
+  padding: 0px 132px;
+  padding-bottom: 145px;
+}
+
+.formWrap__txtWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 140px;
+}
+
+.formWrap__txtWrap > h1 {
+  font-family: "Kyiv Type Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.formWrap__txtWrap > h4 {
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.mailWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 25px;
+}
+
+.mailWrap > label {
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.mailWrap > select {
+  padding: 8px 16px;
+  border-radius: 8px;
+  height: 32px;
+  width: 315px;
+}
+
+.mailWrap > input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  height: 32px;
+  width: 315px;
+}
+
+.labelForEmail {
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #8c959f;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.formWrap-mainButton {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-top: 35px;
+  border-radius: 8px;
+  background: #6997c1;
+  padding: 10px 40px;
+  /* align-items: center; */
+  gap: 12px;
+
+  transition: background 0.3s;
+
+  z-index: 10;
+}
+
+.formWrap-mainButton:hover {
+  background: #ecf6ff;
+}
+
+.formWrap-mainButton:active {
+  background: #0d2f4d;
 }
